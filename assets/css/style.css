@@ -1,0 +1,40 @@
+body { 
+	background-image: url(../images/background.jpg);
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container{
+    margin-top: 20px;
+    background-color: #7dc2eb;
+    margin-bottom: 20px;
+    opacity: .95;
+}
+
+#start {
+    margin: 320px 0 480px 0;
+}
+
+#finished {
+    margin-bottom: 40px;
+}
+
+#summary {
+    margin-top: 60px;
+    margin-bottom: 480px;
+}
+
+#time {
+    color: white;
+    font-size: 24px;
+}
