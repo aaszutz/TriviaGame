@@ -38,3 +38,7 @@ h1 {
     color: white;
     font-size: 24px;
 }
+
+#restart {
+    margin-bottom: 40px;
+}

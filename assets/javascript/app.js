@@ -35,12 +35,12 @@ $(document).ready(function() {
         var alldone = $('<h2>').html('All Done!');
         var canswers = $('<p>').html('Correct answers: ' + correctCount);
         var wanswers = $('<p>').html('Incorrect answers: ' + wrongCount);
-        var cunanswered = $('<p>').html('Unanswered: ' + unanswered);
+        var countUnasnwered = $('<p>').html('Unanswered: ' + unanswered);
         var newclass= $('<div class="col-lg-4 col-lg-offset-4 text-center" id="summary">');
         newclass.append(alldone);
         newclass.append(canswers);
         newclass.append(wanswers);
-        newclass.append(cunanswered);
+        newclass.append(countUnasnwered);
         $('.row:nth(2)').append(newclass);
     }
     
@@ -90,6 +90,8 @@ $(document).ready(function() {
        correctCount =  $('input[value=goodanswer]:checked').length;
        wrongCount = $('input[value=wrong]:checked').length;
        unanswered = (8-(correctCount + wrongCount));
+       $("#restart").show();
+       console.log (unanswered); 
     });
     
     });
