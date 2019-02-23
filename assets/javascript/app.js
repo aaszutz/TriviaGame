@@ -26,18 +26,18 @@ $(document).ready(function() {
     $('#finished').on('click', function(){
         $('#start').hide();
         hide();
-        rSummary();
+        reportSummary();
         stop();
     });
     
     //create the elements for where you will show the summary of the game on the last
-    function rSummary(){
-        var alldone = $('<h2>').html('All Done!');
+    function reportSummary(){
+        var done = $('<h2 id="done">').html('All Done!');
         var correctAsnwers = $('<p>').html('Correct answers: ' + correctCount);
         var wrongAnswers = $('<p>').html('Incorrect answers: ' + wrongCount);
         var countUnasnwered = $('<p>').html('Unanswered: ' + unanswered);
         var newclass= $('<div class="col-lg-4 col-lg-offset-4 text-center" id="score">');
-        newclass.append(alldone);
+        newclass.append(done);
         newclass.append(correctAsnwers);
         newclass.append(wrongAnswers);
         newclass.append(countUnasnwered);
@@ -45,22 +45,22 @@ $(document).ready(function() {
     }
     
     function decrement() {
-        //  Decrease number by one.
+        //  decrease number by one.
         number--;
          
-         //  Show the number on the page
+         //  show the timer on the page
          $("#timer").html(" " + number + " seconds");
         
-        //  Once number hits one change seconds to second.
+        //  once number hits one change seconds to second.
         if (number === 1) {
             $("#timer").html(" " + number + " second");
         }
-          //  Once number hits zero run the stop function
+          //  once number hits zero run the stop function
         else if (number === 0) {
 
             $('#start').hide();
             hide();
-            rSummary();
+            reportSummary();
             stop();
         }
     }
@@ -85,7 +85,7 @@ $(document).ready(function() {
         $('#finished').show();
     }
     
-    //Grab all radio buttons and calculate good and incorrect answers when a change occurs
+    //calculate correct and incorrect answers when a change occurs
     $('input[type=radio]').on("change", function() {
        correctCount =  $('input[value=goodanswer]:checked').length;
        wrongCount = $('input[value=wrong]:checked').length;

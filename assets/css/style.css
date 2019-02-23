@@ -47,6 +47,8 @@ h1 {
 #score {
     margin-top: 60px;
     margin-bottom: 480px;
+    font-size: 30px;
+    color: white;
 }
 
 #time {
@@ -54,6 +56,6 @@ h1 {
     font-size: 24px;
 }
 
-#restart {
-    margin-bottom: 40px;
+#done{
+    font-size: 50px;
 }
