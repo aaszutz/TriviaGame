@@ -6,12 +6,27 @@ form {
     margin-bottom: 25px;
 }
 
+#bannerImage {
+    width: 90%;
+    display:block;
+    margin: 0 auto;
+    overflow: inhert;
+    opacity: 1;
+}
+
+.maintitle {
+    display:block;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
 h1 {
-    margin-top: 40px;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 20px;
-    color: white;
+        margin-top: 40px;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 20px;
+        color: white;
 }
 
 .container{
@@ -29,7 +44,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-#summary {
+#score {
     margin-top: 60px;
     margin-bottom: 480px;
 }

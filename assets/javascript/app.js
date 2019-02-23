@@ -33,13 +33,13 @@ $(document).ready(function() {
     //create the elements for where you will show the summary of the game on the last
     function rSummary(){
         var alldone = $('<h2>').html('All Done!');
-        var canswers = $('<p>').html('Correct answers: ' + correctCount);
-        var wanswers = $('<p>').html('Incorrect answers: ' + wrongCount);
+        var correctAsnwers = $('<p>').html('Correct answers: ' + correctCount);
+        var wrongAnswers = $('<p>').html('Incorrect answers: ' + wrongCount);
         var countUnasnwered = $('<p>').html('Unanswered: ' + unanswered);
-        var newclass= $('<div class="col-lg-4 col-lg-offset-4 text-center" id="summary">');
+        var newclass= $('<div class="col-lg-4 col-lg-offset-4 text-center" id="score">');
         newclass.append(alldone);
-        newclass.append(canswers);
-        newclass.append(wanswers);
+        newclass.append(correctAsnwers);
+        newclass.append(wrongAnswers);
         newclass.append(countUnasnwered);
         $('.row:nth(2)').append(newclass);
     }
@@ -90,7 +90,6 @@ $(document).ready(function() {
        correctCount =  $('input[value=goodanswer]:checked').length;
        wrongCount = $('input[value=wrong]:checked').length;
        unanswered = (8-(correctCount + wrongCount));
-       $("#restart").show();
        console.log (unanswered); 
     });
     
