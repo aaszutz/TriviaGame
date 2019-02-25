@@ -36,7 +36,7 @@ $(document).ready(function() {
         var correctAsnwers = $('<p>').html('Correct answers: ' + correctCount);
         var wrongAnswers = $('<p>').html('Incorrect answers: ' + wrongCount);
         var countUnasnwered = $('<p>').html('Unanswered: ' + unanswered);
-        var newclass= $('<div class="col-lg-4 col-lg-offset-4 text-center" id="score">');
+        var newclass= $('<div class="col-lg-12 col-lg-offset-4 text-center" id="score">');
         newclass.append(done);
         newclass.append(correctAsnwers);
         newclass.append(wrongAnswers);
